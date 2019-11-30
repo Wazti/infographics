@@ -1,0 +1,19 @@
+@import "fonts-init/font-geometria";
+@import "packages-init/v-viewer";
+@import "classes";
+html {
+  @include min-height100();
+
+  body {
+    background: $main-color;
+    @include min-height100();
+
+    #__nuxt {
+      @include min-height100();
+
+      #__layout {
+        @include min-height100();
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@mixin init-font(
+  $family,
+  $family-url,
+  $url-prefix,
+  $weight,
+  $style: null,
+  $extension: "otf"
+) {
+  @font-face {
+    src: url("#{$family-url + $url-prefix + "." + $extension}");
+    font-family: #{$family};
+    font-weight: #{$weight};
+    font-style: #{$style};
+    font-display: block;
+  }
+}
+@mixin min-height100() {
+  height: 1px;
+  min-height: 100%;
+}
+@mixin a-clear() {
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited,
+  &:link {
+    text-decoration: none;
+    color: white;
+  }
+  cursor: pointer;
+}

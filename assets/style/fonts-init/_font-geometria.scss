@@ -1,0 +1,15 @@
+// stylelint-disable
+
+@import '../mixins';
+
+$family: 'Geometria';
+$family-url: '~@/assets/fonts/Geometria/Geometria-';
+
+@include init-font($family, $family-url, 'Thin', 100, null, 'woff');
+@include init-font($family, $family-url, 'ExtraLight', 200, null, 'woff');
+@include init-font($family, $family-url, 'Light', 300, null, 'woff');
+@include init-font($family, $family-url, 'Regular', 400, null, 'woff');
+@include init-font($family, $family-url, 'Medium', 500, null, 'woff');
+@include init-font($family, $family-url, 'Bold', 700, null, 'woff');
+@include init-font($family, $family-url, 'ExtraBold', 800, null, 'woff');
+@include init-font($family, $family-url, 'Heavy', 900, null, 'woff');
